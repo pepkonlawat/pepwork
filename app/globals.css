@@ -4,24 +4,13 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 151,187,183
+  --background-end-rgb: 255,244,207
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgba(var(--background-start-rgb), 0.3),;
+  background: linear-gradient(154deg, rgba(151,187,183,0.5) 0%, rgba(255,244,207,0.5) 100%), url(../public/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../public/background.png) repeat; */
 }
