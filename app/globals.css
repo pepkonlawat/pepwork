@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 151,187,183
-  --background-end-rgb: 255,244,207
+  --foreground-rgb: 37, 37, 37;
+  --background-start-rgb: 151,187,183;
+  --background-end-rgb: 255,244,207;
 }
 body {
-  color: rgba(var(--background-start-rgb), 0.3),;
-  background: linear-gradient(154deg, rgba(151,187,183,0.5) 0%, rgba(255,244,207,0.5) 100%), url(../public/background.png) no-repeat;
+
+  color: rgba(var(--foreground-rgb));
+  background: linear-gradient(154deg, rgba(var(--background-start-rgb),0.5) 0%, rgba(var(--background-end-rgb),0.5) 100%), url(../public/background.png) no-repeat;
   background-size: cover;
   background-position: center;
-  /* background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../public/background.png) repeat; */
 }
